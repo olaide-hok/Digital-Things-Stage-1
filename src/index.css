@@ -1,13 +1,82 @@
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p, a {
+  color: #101828;
+}
+
+a {
+  font-weight: 500;
+}
+
+.main {
+  margin: 64px 0 0;
+}
+@media screen and (min-width: 900px) {
+    .main {
+      padding: 0 112px;
+      margin: 0;
+    }
+}
+
+.share {
+  display: none;
+}
+
+.shareMobile {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  top: 45px;
+  background: #FFFFFF;
+  border: 1px dashed #D0D5DD;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .share {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 350px;
+    top: 45px;
+    background: #FFFFFF;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+  }
+
+  .shareMobile {
+    display: none;
+  }
+}
+.section {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 900px) {
+    .section {
+      padding: 64px 144px 0;
+  }
+}
+
+.slack {
+  margin-right: 24px;
+}
+.github {
+  font-size: 24px;
+}
+
+.social_section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
