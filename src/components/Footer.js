@@ -16,12 +16,18 @@ const Footer = () => {
 }
 
 const FooterWrapper = styled.footer`
+    
     .footer {
+        border-top: 1px solid #EAECF0;
+        padding: 32px 0px 0px;
+        margin: 70px 16px 32px 16px;
         @media screen and (min-width: 900px) {
             border-top: 1px solid #EAECF0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 70px 112px 32px 112px;
+            padding: 30px 0 48px;
         }
     }
 `
