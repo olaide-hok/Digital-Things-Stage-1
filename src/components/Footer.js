@@ -7,9 +7,13 @@ const Footer = () => {
   return (
     <FooterWrapper>
         <div className='footer'>
-            <img src={ZURILOGO} alt="Zuri Logo" />
+            <a href="https://internship.zuri.team/" target="_blank" rel="noopener noreferrer">
+                <img src={ZURILOGO} alt="Zuri Logo" />
+            </a>
             <p>HNG Internship 9 Frontend Task</p>
-            <img src={I4G} alt="I4G Logo" />
+            <a href="https://ingressive.org/" target="_blank" rel="noopener noreferrer">
+                <img src={I4G} alt="I4G Logo" />
+            </a>
         </div>
     </FooterWrapper>
   )
