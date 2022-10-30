@@ -18,5 +18,10 @@ const LinkTag = styled.a`
     text-decoration: none;
     text-align: center;
     color: #101828;
+
+    &:hover {
+      background: #D0D5DD;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    }
 `
 export default Link
