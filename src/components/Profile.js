@@ -14,8 +14,12 @@ const Profile = () => {
             <p id='slack' style={{ display: "none", textAlign: "center" }}>Habeeb</p>
 
         </div>
-        <img src={ShareIcon} alt="share icon" className='share' />
-        <img src={ShareIconMobile} alt="share icon" className='shareMobile' />
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src={ShareIcon} alt="share icon" className='share' />
+        </a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src={ShareIconMobile} alt="share icon" className='shareMobile' />
+        </a>
 
     </ProfileWrapper>
   )
