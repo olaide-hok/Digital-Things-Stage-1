@@ -9,8 +9,10 @@ const Profile = () => {
   return (
     <ProfileWrapper>
         <div>
-            <img src={ProfileImg} alt='avatar' />
-            <p>Annette Black</p>
+            <img id='profile__img' src={ProfileImg} alt='avatar' />
+            <p id='twitter' style={{ textAlign: "center" }}>Habeeb</p>
+            <p id='slack' style={{ display: "none", textAlign: "center" }}>Habeeb</p>
+
         </div>
         <img src={ShareIcon} alt="share icon" className='share' />
         <img src={ShareIconMobile} alt="share icon" className='shareMobile' />
