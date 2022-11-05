@@ -14,23 +14,23 @@ const ContactPage = () => {
             <div className='FandL'>
                 <div>
                 <label htmlFor="first_name">First name</label>
-                <input type="text" id="first_name" placeholder='Enter your first name' />
+                <input type="text" id="first_name" placeholder='Enter your first name' required/>
                 </div>
 
                 <div className=''>    
                 <label htmlFor="last_name">Last name</label>
-                <input type="text" id="last_name" placeholder='Enter your last name'/>
+                <input type="text" id="last_name" placeholder='Enter your last name'required/>
                 </div>
             </div>
 
             <label htmlFor="email">Email</label>
-            <input type="email" name="" id="email" placeholder='yourname@email.com' />
+            <input type="email" name="" id="email" placeholder='yourname@email.com' required/>
 
             <label htmlFor="message">Message</label>
-            <textarea name="" id='message' placeholder="Send me a message and I'll will reply as soon as possible..."></textarea>
+            <textarea name="" id='message' placeholder="Send me a message and I'll will reply as soon as possible..." required></textarea>
 
-            <div className='radio'>
-                <input type="radio" name="terms" id="terms" />
+            <div className='checkbox'>
+                <input type="checkbox" name="terms" id="terms" required/>
                 <label htmlFor="terms">"You agree to providing your data to Habeeb who may contact you."</label>
             </div>
 
@@ -101,7 +101,7 @@ const FormWrapper = styled.div`
                 display: grid;
             }
         }
-        .radio {
+        .checkbox {
             margin-bottom: 2rem;
             display: flex;
 
@@ -145,7 +145,7 @@ const FormWrapper = styled.div`
                 }
             }
 
-            .radio {
+            .checkbox {
                 display: block;
             }
 
