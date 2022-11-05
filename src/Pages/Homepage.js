@@ -16,9 +16,8 @@ const Homepage = () => {
         <CustomLink link_address={'https://background.zuri.team'} link_name={'Background Check for Coders'} linkID={'pitch'}/>
         <CustomLink link_address={'https://books.zuri.team/design-rules'} link_name={'Design Books'} linkID={'book__design'}/>
         
-        <Link to='contact'>Contact
-        </Link>
-        {/* <CustomLink link_name={'Contact'} linkID={'contact'}/> */}
+        <Link to='contact' id='contact' className="link_btn">Contact</Link>
+
         <div className='social_section'>
           <a href='https://slack.com'>
             <img src={Slack} alt="slack" className='slack' />
