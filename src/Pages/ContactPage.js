@@ -18,7 +18,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className=''>    
-                <label htmlFor="last_name">last name</label>
+                <label htmlFor="last_name">Last name</label>
                 <input type="text" id="last_name" placeholder='Enter your last name'/>
                 </div>
             </div>
@@ -31,7 +31,7 @@ const ContactPage = () => {
 
             <div className='radio'>
                 <input type="radio" name="terms" id="terms" />
-                <label htmlFor="terms">"You agree to providing your data to who may contact you."</label>
+                <label htmlFor="terms">"You agree to providing your data to Habeeb who may contact you."</label>
             </div>
 
             <button type="submit" id="btn__submit" className='submit_btn'>Send message</button>
@@ -43,43 +43,91 @@ const ContactPage = () => {
 }
 
 const FormWrapper = styled.div`
+    padding: 0 1rem;
+    input[type="text"], input[type="email"], textarea {
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        font-family: 'Inter';
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 10px 14px;
+        color: #667085;
+    }
+    input[type="text"], input[type="email"] {
+        height: 2.75rem;
+    }
+    textarea {
+        height: 8.25rem;
+    }
+    label {
+        color: #344054;
+        margin-bottom: 6px;
+        font-family: 'Inter';
+        font-size: 1rem;
+    }
+    .contact_text {
+        margin-bottom: 3rem;
+
+        h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: #101828;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #475467;
+        }
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        .FandL {
+
+            div {
+                display: grid;
+            }
+        }
+        .radio {
+            margin-bottom: 2rem;
+            display: flex;
+
+            input {
+                margin-right: 0.75rem;
+            }
+        }
+    }
+
+    .submit_btn {
+        background: #1570EF;
+        border: 1px solid #1570EF;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
 
     @media screen and (min-width: 900px) {
         max-width: 45rem;
         margin: 0 auto;
         padding-top: 4rem;
         .contact_text {
-            margin-bottom: 3rem;
-        }
-
-        input[type="text"], input[type="email"], textarea {
-            background: #FFFFFF;
-            border: 1px solid #D0D5DD;
-            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-            border-radius: 8px;
-            font-family: 'Inter';
-            margin-bottom: 2.75rem;
-            padding: 10px 14px;
-        }
-
-        input[type="text"], input[type="email"] {
-            height: 2.75rem;
-        }
-
-        textarea {
-            height: 8.25rem;
-        }
-
-        label {
-            color: #344054;
-            margin-bottom: 6px;
-            font-family: 'Inter';
-        }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }       
 
         .contact_form {
-            display: flex;
-            flex-direction: column;
-
             .FandL {
                 display: grid;
                 grid: auto / auto auto;
@@ -90,26 +138,10 @@ const FormWrapper = styled.div`
                 }
             }
 
-
             .radio {
-                margin-bottom: 2rem;
-
-                input {
-                    margin-right: 0.75rem;
-                }
+                display: block;
             }
 
-            .submit_btn {
-                background: #1570EF;
-                border: 1px solid #1570EF;
-                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-                border-radius: 8px;
-                padding: 12px 20px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-                color: #FFFFFF;
-            }
         }
     }
 `
