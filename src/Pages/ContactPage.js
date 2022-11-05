@@ -15,19 +15,23 @@ const ContactPage = () => {
                 <div>
                 <label htmlFor="first_name">First name</label>
                 <input type="text" id="first_name" placeholder='Enter your first name' required/>
+                <p className="requirements">Please enter your first name</p>
                 </div>
 
                 <div className=''>    
                 <label htmlFor="last_name">Last name</label>
                 <input type="text" id="last_name" placeholder='Enter your last name'required/>
+                <p className="requirements">Please enter your last name</p>
                 </div>
             </div>
 
             <label htmlFor="email">Email</label>
             <input type="email" name="" id="email" placeholder='yourname@email.com' required/>
+            <p className="requirements">Please enter a valid email</p>
 
             <label htmlFor="message">Message</label>
-            <textarea name="" id='message' placeholder="Send me a message and I'll will reply as soon as possible..." required></textarea>
+            <textarea type="text" name="message" id='message' placeholder="Send me a message and I'll will reply as soon as possible..." required></textarea>
+            {/* <p className="requirements">Please enter a message</p> */}
 
             <div className='checkbox'>
                 <input type="checkbox" name="terms" id="terms" required/>
@@ -65,6 +69,16 @@ const FormWrapper = styled.div`
         height: 2.75rem;
     }
 
+    input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+        border: 1px solid #F89687;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+        margin-bottom: 6px;
+    }
+
+    input[type="email"]:invalid:not(:focus):not(:placeholder-shown) ~ p {
+        max-height: 30px;
+    }
+
     textarea {
         height: 8.25rem;
     }
@@ -74,6 +88,19 @@ const FormWrapper = styled.div`
         font-family: 'Inter';
         font-size: 1rem;
     }
+    .requirements {
+        max-height: 0;
+        transition: 0.28s;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F83F23;
+    }
+    
     .contact_text {
         margin-bottom: 3rem;
 
