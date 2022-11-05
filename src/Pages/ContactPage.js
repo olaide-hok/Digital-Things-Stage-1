@@ -13,28 +13,28 @@ const ContactPage = () => {
 
             <div className='FandL'>
                 <div>
-                <label htmlFor="fname">First name</label>
-                <input type="text" placeholder='Enter your first name' />
+                <label htmlFor="first_name">First name</label>
+                <input type="text" id="first_name" placeholder='Enter your first name' />
                 </div>
 
                 <div className=''>    
-                <label htmlFor="lname">last name</label>
-                <input type="text" placeholder='Enter your last name'/>
+                <label htmlFor="last_name">last name</label>
+                <input type="text" id="last_name" placeholder='Enter your last name'/>
                 </div>
             </div>
 
             <label htmlFor="email">Email</label>
             <input type="email" name="" id="email" placeholder='yourname@email.com' />
 
-            <label htmlFor="textarea">Message</label>
-            <textarea name="" id='textarea' placeholder="Send me a message and I'll will reply as soon as possible..."></textarea>
+            <label htmlFor="message">Message</label>
+            <textarea name="" id='message' placeholder="Send me a message and I'll will reply as soon as possible..."></textarea>
 
             <div className='radio'>
                 <input type="radio" name="terms" id="terms" />
                 <label htmlFor="terms">"You agree to providing your data to who may contact you."</label>
             </div>
 
-            <button type="submit" className='submit_btn'>Send message</button>
+            <button type="submit" id="btn__submit" className='submit_btn'>Send message</button>
 
         </form>
 
