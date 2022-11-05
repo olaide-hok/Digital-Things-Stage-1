@@ -54,10 +54,17 @@ const FormWrapper = styled.div`
         margin-bottom: 1.5rem;
         padding: 10px 14px;
         color: #667085;
+
+        &:focus {
+            border: 1px solid #84CAFF;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+            outline: none;
+        }
     }
     input[type="text"], input[type="email"] {
         height: 2.75rem;
     }
+
     textarea {
         height: 8.25rem;
     }
