@@ -23,7 +23,7 @@ a {
 @media screen and (min-width: 900px) {
     .main {
       padding: 0 112px;
-      margin: 0;
+      margin: 0 auto;
     }
 }
 
